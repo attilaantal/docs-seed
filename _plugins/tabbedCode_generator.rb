@@ -10,7 +10,7 @@ module Reading
 	
 		def createTabbedCode(page, content)
 			tab_start = /````\w/
-			tab_end = /````\W/
+			tab_end = /````/
 
 			first_index = content.index(tab_start)
 			last_index = first_index && content.index(tab_end, first_index)
